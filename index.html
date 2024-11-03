@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Volkswagen Showroom</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="fade-in">Unleash Your Passion for Driving</h2>
+            <p class="fade-in">Explore the latest Volkswagen models in an immersive experience that puts you in the driver’s seat.</p>
+            <a href="#models" class="cta-button bounce">Explore Models</a>
+        </div>
+    </section>
+
+    <div id="container"></div>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Welcome to the Volkswagen Showroom, where car enthusiasts can explore a variety of Volkswagen models in a unique experience.</p>
+            <p>Our mission is to provide an immersive platform for discovering your dream Volkswagen.</p>
+            <p>With advanced technology and a user-friendly interface, we ensure that your experience is both enjoyable and informative.</p>
+        </div>
+        <img src="about-image.jpg" alt="About Volkswagen" class="about-image">
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="car1.jpg" alt="Volkswagen Car 1">
+            <img src="car2.jpg" alt="Volkswagen Car 2">
+            <img src="car3.jpg" alt="Volkswagen Car 3">
+            <img src="car4.jpg" alt="Volkswagen Car 4">
+            <img src="car5.jpg" alt="Volkswagen Car 5">
+            <img src="car6.jpg" alt="Volkswagen Car 6">
+        </div>
+    </section>
+
+    <section id="models">
+        <h2>Available Models</h2>
+        <div class="model-container">
+            <div class="model-card">
+                <img src="model1.jpg" alt="Volkswagen Golf">
+                <h3>Volkswagen Golf</h3>
+                <p>Experience the perfect blend of style and performance with the Volkswagen Golf.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="model-card">
+                <img src="model2.jpg" alt="Volkswagen Passat">
+                <h3>Volkswagen Passat</h3>
+                <p>Luxury and comfort come together in the elegant Volkswagen Passat.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="model-card">
+                <img src="model3.jpg" alt="Volkswagen Tiguan">
+                <h3>Volkswagen Tiguan</h3>
+                <p>Adventure awaits in the versatile and spacious Volkswagen Tiguan.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="thank-you-message" class="hidden">Thank you for your message! We appreciate your feedback and will get back to you shortly.</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Volkswagen Showroom. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
